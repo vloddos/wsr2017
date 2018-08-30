@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ExpertController">
+   <children>
+      <fx:include source="common/logged_header.fxml" />
+      <Label text="Меню эксперта">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="greeting" layoutX="340.0" layoutY="5.0" />
+      <VBox alignment="CENTER" spacing="10.0">
+         <children>
+            <Button layoutX="252.0" layoutY="102.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="211.0" text="Ввод оценок" />
+            <Button layoutX="252.0" layoutY="179.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="211.0" text="Просмотр результатов" />
+            <Button layoutX="252.0" layoutY="25.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="211.0" text="Жеребьевка" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <fx:include source="common/footer.fxml" />
+   </children>
+</VBox>

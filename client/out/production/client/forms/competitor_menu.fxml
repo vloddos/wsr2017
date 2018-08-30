@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CompetitorController">
+   <children>
+      <fx:include source="common/logged_header.fxml" />
+      <Label text="Меню участника">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="greeting" layoutX="192.0" layoutY="30.0" />
+      <HBox alignment="CENTER" layoutX="120.0" layoutY="5.0" prefHeight="243.0" prefWidth="714.0" spacing="180.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="123.0" layoutX="120.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox layoutX="483.0" layoutY="5.0" spacing="10.0">
+               <children>
+                  <Button layoutX="483.0" layoutY="5.0" mnemonicParsing="false" onAction="#openMyProfile" prefHeight="70.0" prefWidth="190.0" text="Мой профиль" />
+                  <Button layoutX="483.0" layoutY="83.0" mnemonicParsing="false" onAction="#openMyCompetence" prefHeight="70.0" prefWidth="190.0" text="Моя компетенция" />
+                  <Button layoutX="483.0" layoutY="161.0" mnemonicParsing="false" onAction="#openMyResults" prefHeight="70.0" prefWidth="190.0" text="Мои результаты" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <fx:include source="common/footer.fxml" />
+   </children>
+</VBox>

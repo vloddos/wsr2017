@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MyProfileController">
+   <children>
+      <fx:include source="common/logged_header.fxml" />
+      <Pane prefHeight="448.0" prefWidth="714.0">
+         <children>
+            <Label layoutX="274.0" layoutY="1.0" text="Мой профиль">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="123.0" layoutX="509.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+            <VBox alignment="CENTER_RIGHT" layoutX="6.0" layoutY="81.0" prefHeight="232.0" prefWidth="123.0" spacing="30.0">
+               <children>
+                  <Label text="Имя:" />
+                  <Label text="Пол:" />
+                  <Label text="Дата рождения:" />
+                  <Label text="Регион:" />
+                  <Label text="email:" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbox" alignment="CENTER" layoutX="384.0" layoutY="237.0" spacing="10.0">
+               <children>
+                  <HBox layoutX="376.0" layoutY="237.0" spacing="5.0">
+                     <children>
+                        <VBox alignment="CENTER_RIGHT" spacing="20.0">
+                           <children>
+                              <Label layoutX="419.0" layoutY="242.0" text="Пароль:" />
+                              <Label layoutX="365.0" layoutY="281.0" text="Повтор пароля:" />
+                           </children>
+                        </VBox>
+                        <VBox spacing="10.0">
+                           <children>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <PasswordField fx:id="password" />
+                                    <TextField fx:id="unmasked_password" />
+                                 </children>
+                              </GridPane>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <PasswordField fx:id="repeat_password" layoutX="481.0" layoutY="276.0" />
+                                    <TextField fx:id="unmasked_repeat_password" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <CheckBox fx:id="visible_password" alignment="TOP_LEFT" layoutX="461.0" layoutY="318.0" mnemonicParsing="false" onAction="#visible_password" text="Видимый пароль" />
+                  <HBox alignment="CENTER" layoutX="439.0" layoutY="348.0" prefHeight="31.0" prefWidth="236.0" spacing="30.0">
+                     <children>
+                        <Button layoutX="484.0" layoutY="348.0" mnemonicParsing="false" onAction="#save" text="Save" />
+                        <Button layoutX="551.0" layoutY="348.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <CheckBox fx:id="change_password" alignment="TOP_LEFT" layoutX="461.0" layoutY="206.0" mnemonicParsing="false" onAction="#change_password" text="Смена пароля" />
+            <VBox alignment="CENTER_LEFT" layoutX="129.0" layoutY="81.0" prefHeight="232.0" prefWidth="246.0" spacing="30.0">
+               <children>
+                  <Label fx:id="name" />
+                  <Label fx:id="gender" />
+                  <Label fx:id="dateofbirth" />
+                  <Label fx:id="region" />
+                  <Label fx:id="email" />
+               </children>
+            </VBox>
+            <Label fx:id="message" alignment="CENTER" layoutX="382.0" layoutY="386.0" textFill="RED" />
+         </children>
+      </Pane>
+      <fx:include source="common/footer.fxml" />
+   </children>
+</VBox>

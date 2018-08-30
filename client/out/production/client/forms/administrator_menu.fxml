@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="714.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdministratorController">
+   <children>
+      <fx:include source="common/logged_header.fxml" />
+      <Label text="Меню администратора">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="greeting" layoutX="340.0" layoutY="5.0" />
+      <VBox alignment="CENTER" prefHeight="226.0" prefWidth="714.0" spacing="20.0">
+         <children>
+            <Button layoutX="252.0" layoutY="58.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="211.0" text="Управление чемпионатами" />
+            <Button layoutX="252.0" layoutY="151.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="211.0" text="Управление участниками" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </VBox>
+      <fx:include source="common/footer.fxml" />
+   </children>
+</VBox>

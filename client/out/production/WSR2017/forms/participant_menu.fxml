@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="714.0" spacing="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="82.0" prefWidth="714.0">
+         <children>
+            <fx:include source="common/top.fxml" />
+            <Button layoutX="622.0" layoutY="25.0" mnemonicParsing="false" text="Logout" />
+         </children>
+      </Pane>
+      <HBox alignment="CENTER" prefHeight="255.0" prefWidth="714.0" spacing="200.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <Label text="Label" />
+                  <ImageView fitHeight="181.0" fitWidth="176.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </VBox>
+            <VBox prefHeight="290.0" prefWidth="230.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" text="Мой профиль" />
+                  <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" text="Моя компетенция" />
+                  <Button mnemonicParsing="false" prefHeight="84.0" prefWidth="256.0" text="Мои результаты" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <fx:include source="common/bottom.fxml" />
+   </children>
+</VBox>
