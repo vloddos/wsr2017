@@ -3,14 +3,14 @@
 В начале необходимо открыть mysql workbench, создать бд с названием "wsr2017_db", выполнить скрипты для бд
 
 Порядок создания таблиц:
-  clientgroups
-  events
-  regions
-  skills
-  users
-  results
-  volunteers
-  wsi
+* clientgroups
+* events
+* regions
+* skills
+* users
+* results
+* volunteers
+* wsi
 
 После создания всех таблиц и запуска workbench нужно запустить сервер
 
