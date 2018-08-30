@@ -12,6 +12,11 @@
 * volunteers
 * wsi
 
-После создания всех таблиц и запуска workbench нужно запустить сервер
+После создания всех таблиц и запуска workbench нужно запустить сервер, предварительно указав логин и пароль в полях
+```java
+private static final String user;
+private static final String password;
+```
+соответственно
 
 Теперь можно запускать клиент
