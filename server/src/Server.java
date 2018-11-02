@@ -32,8 +32,8 @@ public class Server {
             System.out.println(socket);
             while (true)
                 new Server(socket.accept()).run();
-        } catch (Exception err) {
-            System.out.println("ERROR: " + err);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

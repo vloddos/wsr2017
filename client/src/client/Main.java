@@ -1,16 +1,17 @@
 package client;
 
-import controllers.FooterController;
+import controllers.Footer;
+import controllers.Header;
 import javafx.application.Application;
 import javafx.stage.Stage;
-import views.View;
 
 public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        View.getInstance().main_stage.show();
-        FooterController.startThread();
+        //Stages.getInstance();//???
+        Header.openMain();
+        Footer.startThread();
     }
 
     public static void main(String[] args) {

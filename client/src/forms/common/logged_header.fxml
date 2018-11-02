@@ -8,12 +8,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="82.0" prefWidth="714.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HeaderController">
+<AnchorPane prefHeight="82.0" prefWidth="714.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Header">
    <children>
       <Button layoutX="205.0" layoutY="26.0" mnemonicParsing="false" onAction="#back" text="Back" />
       <ImageView fitHeight="61.0" fitWidth="167.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../src/white.png" />
+            <Image url="@../../resources/logo/white.png" />
          </image>
       </ImageView>
       <Button layoutX="617.0" layoutY="26.0" mnemonicParsing="false" onAction="#logout" text="Logout" />

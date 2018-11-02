@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="714.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CompetitionsOfChampionship">
+   <children>
+      <fx:include source="common/header.fxml" />
+      <HBox alignment="CENTER" prefHeight="230.0" prefWidth="714.0" spacing="100.0">
+         <children>
+            <TreeView prefHeight="200.0" prefWidth="200.0" />
+            <TextArea fx:id="info" editable="false" maxWidth="350.0" wrapText="true" />
+         </children>
+      </HBox>
+      <fx:include source="common/footer.fxml" />
+   </children>
+</VBox>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="490.0" prefWidth="714.0" spacing="15.0" xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HistoryOfWorldSkills">
+    <children>
+        <fx:include source="common/header.fxml"/>
+        <Label text="История WorldSkills">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="230.0" prefWidth="714.0" spacing="100.0">
+            <children>
+                <VBox alignment="CENTER" prefHeight="229.0" prefWidth="212.0">
+                    <children>
+                        <ImageView fitHeight="100.0" fitWidth="150.0"
+                                   onMouseClicked="#setAlbertVidalInfo"
+                                   pickOnBounds="true">
+                            <image>
+                                <Image url="@../resources/history/albert_vidal.JPG"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="100.0" fitWidth="150.0" onMouseClicked="#setWSR1Info"
+                                   pickOnBounds="true">
+                            <image>
+                                <Image url="@../resources/history/wsr1.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitHeight="100.0" fitWidth="150.0"
+                                   onMouseClicked="#setSimonBartleyInfo"
+                                   pickOnBounds="true">
+                            <image>
+                                <Image url="@../resources/history/simon_bartley.jpg"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <TextArea fx:id="info" editable="false" maxWidth="350.0" wrapText="true"/>
+            </children>
+        </HBox>
+        <fx:include source="common/footer.fxml"/>
+    </children>
+</VBox>

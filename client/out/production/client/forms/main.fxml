@@ -14,13 +14,13 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="BASELINE_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="714.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<VBox alignment="BASELINE_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="714.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Main">
    <children>
       <AnchorPane prefHeight="0.0" prefWidth="714.0" style="-fx-background-color: gray;">
          <children>
             <ImageView fitHeight="145.0" fitWidth="176.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" smooth="false">
                <image>
-                  <Image url="@../src/sq.black.png" />
+                  <Image url="@../resources/logo/sq.black.png" />
                </image>
             </ImageView>
             <ScrollPane layoutX="295.0" layoutY="25.0" minHeight="50.0" prefViewportHeight="35.0" prefViewportWidth="268.0" style="-fx-background-color: gray;">
@@ -39,7 +39,7 @@
             </ScrollPane>
          </children>
       </AnchorPane>
-      <Button alignment="CENTER" layoutX="223.0" layoutY="159.0" minHeight="51.0" minWidth="300.0" mnemonicParsing="false" text="О WorldSkills">
+      <Button alignment="CENTER" layoutX="223.0" layoutY="159.0" minHeight="51.0" minWidth="300.0" mnemonicParsing="false" onAction="#openAboutWorldSkills" text="О WorldSkills">
          <font>
             <Font size="24.0" />
          </font>

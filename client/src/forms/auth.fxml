@@ -8,7 +8,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="400.0" prefWidth="714.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AuthController">
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="714.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Auth">
    <children>
       <fx:include source="common/header.fxml" />
       <Label text="Пожалуйста, авторизуйтесь в системе, используя ваш адрес электронной почты и пароль." />

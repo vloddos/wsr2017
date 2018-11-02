@@ -4,16 +4,16 @@ import java.util.ArrayList;
 
 public class Controllers {
 
-    public static MainController mainController;
-    public static AuthController authController;
-    public static CompetitorController competitorController;
-    public static CoordinatorController coordinatorController;
-    public static AdministratorController administratorController;
-    public static ExpertController expertController;
-    public static MyProfileController myProfileController;
-    public static MyCompetenceController myCompetenceController;
-    public static MyResultsController myResultsController;
+    public static Main main;
+    public static Auth auth;
+    public static Competitor competitor;
+    public static Coordinator coordinator;
+    public static Administrator administrator;
+    public static Expert expert;
+    public static MyProfile myProfile;
+    public static MyCompetence myCompetence;
+    public static MyResults myResults;
 
-    public static ArrayList<HeaderController> hcal = new ArrayList<>();
-    public static ArrayList<FooterController> fcal = new ArrayList<>();
+    public static ArrayList<Header> hcal = new ArrayList<>();
+    public static ArrayList<Footer> fcal = new ArrayList<>();
 }

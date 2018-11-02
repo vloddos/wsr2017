@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="373.0" prefWidth="714.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AboutWorldSkills">
+    <children>
+        <fx:include source="common/header.fxml" />
+      <Label text="О WorldSkills">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" minHeight="51.0" minWidth="300.0" mnemonicParsing="false" onAction="#openHistoryOfWorldSkills" prefWidth="322.0" text="История WorldSkills">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" minHeight="51.0" minWidth="300.0" mnemonicParsing="false" prefWidth="322.0" text="Компетенции чемпионата">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" minHeight="51.0" minWidth="300.0" mnemonicParsing="false" prefWidth="322.0" text="Чемпионаты стран WSI">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <fx:include source="common/footer.fxml" />
+    </children>
+</VBox>
